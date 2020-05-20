@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Post App Demo",
+    "slug": "react_native_post_app",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.wedoapps.eu.post",
+      "supportsTablet": true,
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.wedoapps.eu.post",
+      "versionCode": 1,
+      "permissions": ["CAMERA","WRITE_EXTERNAL_STORAGE"]
+    }
+  }
+}
