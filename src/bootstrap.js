@@ -7,6 +7,7 @@ export async function bootstrap() {
             'open-bold': require('../assets/fonts/OpenSans-Bold.ttf'),
             'open-regular': require('../assets/fonts/OpenSans-Regular.ttf')
         });
+        await DB.init()
         
         console.log('Database success');
         
