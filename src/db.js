@@ -32,7 +32,7 @@ export class DB {
     static createPosts({text,img, date, booked}) {
         console.log(text, date, img, booked);
         
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
             db.transaction(tx => {
                 tx.executeSql(
                     'INSERT INTO posts (text,img, date, booked) VALUES (?,?,?,?)',

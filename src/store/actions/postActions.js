@@ -56,7 +56,8 @@ export const addPost = post => async dispatch => {
     const payload = {...post, img: newPath }
 
     const id = await DB.createPosts(payload);
-    console.log(id);
+    console.log('addPostId: ',id);
+    
     
 
     payload.id = id

@@ -3,7 +3,7 @@ import { StyleSheet, View, FlatList, Text } from 'react-native';
 import { Post } from './Post'
 
 export const PostList = ({data = [], onOpen}) => {
-    console.log('data',data);
+    //console.log('data',data);
 
     if(!data.length) {
         return (<View style={styles.wrapper}><Text style={styles.noItems}>Հոդվածներ դեռ չկան</Text></View>)
